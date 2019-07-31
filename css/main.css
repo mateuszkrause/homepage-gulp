@@ -316,7 +316,192 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  background: #fefefe;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(200, 130, 0, 0.2)), color-stop(40%, rgba(255, 255, 0, 0.2)), color-stop(80%, #fefefe));
+  background: -webkit-linear-gradient(top, rgba(200, 130, 0, 0.2) 0%, rgba(255, 255, 0, 0.2) 40%, #fefefe 80%);
+  background: -o-linear-gradient(top, rgba(200, 130, 0, 0.2) 0%, rgba(255, 255, 0, 0.2) 40%, #fefefe 80%);
+  background: linear-gradient(180deg, rgba(200, 130, 0, 0.2) 0%, rgba(255, 255, 0, 0.2) 40%, #fefefe 80%); }
+
+.about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about; }
+
+.about__header {
+  color: #252422; }
+
+.about__link {
+  color: #EB5E28;
+  text-decoration: none; }
+
+.article__header {
+  color: #252422; }
+
+.article__image {
+  max-width: 550px;
+  width: 100%; }
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content; }
+
+.day__header::after {
+  background: red;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 4px;
+  width: 16px; }
+
+.day__header::before {
+  background: green;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-right: 4px;
+  width: 16px; }
+
+.day__header--1 {
+  color: red; }
+
+.day__header--2 {
+  color: orange; }
+
+.day__header--3 {
+  color: yellow; }
+
+.day__header--4 {
+  color: green; }
+
+.day__header--5 {
+  color: blue; }
+
+.day__link {
+  color: #EB5E28;
+  text-decoration: none; }
+
+.diary__days {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px; }
+
+.diary__header {
+  color: #252422; }
+
+.footer__link {
+  bottom: 10px;
+  color: #EB5E28;
+  position: fixed;
+  right: 10px;
+  text-decoration: none; }
+
+.hobby__list {
+  list-style: none;
+  padding: 0; }
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 160px 1fr;
+  grid-template-columns: 160px 1fr;
+      grid-template-areas: "header header" "about content";
+  margin: 32px auto;
+  max-width: 700px;
+  padding-top: 50px; }
+
+.main__heading--red {
+  color: darkred; }
+
+.main__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  color: #EB5E28;
+  grid-area: header; }
+
+.navigation__item {
+  margin: 0 16px; }
+
+.navigation__link {
+  color: #EB5E28;
+  text-decoration: none; }
+
+.navigation__link:visited {
+  color: #ccc; }
+
+.navigation__link:hover {
+  color: green; }
+
+.navigation__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding: 0; }
+
+.navigation__switcher {
+  border: none;
+  background: none;
+  color: #EB5E28;
+  display: none; }
+
+.site-header {
+  background: #fefefe;
+  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+@media (max-width: 640px) {
+  .diary__days {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+  .main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas: "header" "about" "content"; }
+  .navigation__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .navigation__list--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .navigation__item {
+    margin: 16px; }
+  .navigation__switcher {
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 0;
+    margin: 0; }
+  .site-header {
+    min-height: 48px; }
+  .about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .content {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .main__header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; } }
 
 /*# sourceMappingURL=main.css.map */
