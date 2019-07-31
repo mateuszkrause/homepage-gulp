@@ -1,40 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Strona Domowa</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list navigation__list--js">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">&#9776</button>
+  </header>
+  <main id="main" class="main">
+    <header class="main__header">
+      <h1 class="main__heading main__heading--js">
+        Mateusz Krause - Strona Domowa
+      </h1>
+      <button class="main__button main__button--js">zmień treść nagłówka</button>
+    </header>
+    <section class="about">
+      <h2 class="about__header">Kim jestem?</h2>
+      <p>Jestem młodym człowiekiem, który postanowił <strong>uczyć się frontendu</strong>, żeby
+        dostać pracę, w której będą mu płacić <em>8,000 zł za zmienianie fontów na stronach</em>.</p>
+      <p class="about__paragraph--js">Test modyfikatora</p>
+      <a class="about__link" href="#diary">Przejdź do pamiętniczka</a>
+      <section class="hobby">
+        <h3 class="about__header">Moje hobby</h3>
+        <ul class="hobby__list">
+          <li>Gry</li>
+          <li>Nauka</li>
+          <li>Sport</li>
+          <li>Układanie planu dnia
+            <ol>
+              <li>Otwórz przeglądarkę</li>
+              <li>Wpisz cotenfrontend.pl</li>
+              <li>[enter]</li>
+            </ol>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <div class="content">
+      <section id="diary" class="diary">
+        <h2 class="diary__header">Pamiętniczek</h2>
+        <div class="diary__days">
+          <section class="day">
+            <h3 class="day__header day__header--1">Dzień 1</h3>
+            <p>Oglądam wszystkie filmy ze szkolenia i tak mnie wciągnęło, że oczy mi zaschły od
+              niemrugania
+              powiekami.</p>
+            <a class="day__link" href="diary/day1.html">Przeczytaj do czego doprowadza ciśnięcie w kodzie!</a>
+          </section>
+          <section class="day">
+            <h3 class="day__header day__header--2">Dzień 2</h3>
+            <p>Dziś fajrant! Nie miałem czasu się zająć niczym związanym z frontendem, a ten tekst
+              pisany jest dnia
+              kolejnego.</p>
+            <a class="day__link" href="diary/day2.html">Zobacz co należy zrobić, kiedy już masz dość.</a>
+          </section>
+          <section class="day">
+            <h3 class="day__header day__header--3">Dzień 3</h3>
+            <p>Zaprogramowałem sobie w HTML dokument opisujący na co wydam pierwszą wypłatę
+              frontendową.</p>
+            <a class="day__link" href="diary/day3.html">Sprawdź na co!</a>
+          </section>
+          <section class="day">
+            <h3 class="day__header day__header--4">Dzień 4</h3>
+            <p>Jako kibic Legii Warszawa koloruję każdy dzień z tego pamiętniczka, żeby stworzyć
+              ukochaną mi tęczę.</p>
+            <a class="day__link" href="diary/day4.html">Co mnie do tego zmotywowało?</a>
+          </section>
+          <section class="day">
+            <h3 class="day__header day__header--5">Dzień 5</h3>
+            <p>Za pomocą CSS zaprogramowałem aplikację na androida.</p>
+            <a class="day__link" href="diary/day5.html">Przeczytaj o mojej przygodzie.</a>
+          </section>
+        </div>
+      </section>
+      <section class="glossary">
+        <h2 class="glossary__header">Lista opisowa</h2>
+        <dl>
+          <dt>CSS</dt>
+          <dd>style (to co widzisz jak jest ładne albo brzydkie)</dd>
+          <dt>HTML</dt>
+          <dd>treść + szkielet strony</dd>
+          <dt>JavaScript</dt>
+          <dt>Es6</dt>
+          <dd>rzeczy których teraz się uczę</dd>
+        </dl>
+      </section>
+      <section class="data">
+        <h2 class="data_header">Tabela</h2>
+        <table class="table">
+          <caption>Oceny z I semestru z przedmiotu WTF</caption>
+          <thead>
+            <tr>
+              <th>Imię i nazwisko</th>
+              <th>Ocena</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mateusz Krause</td>
+              <td>3</td>
+              <td>02/02/2250</td>
+            </tr>
+            <tr>
+              <td>Jan Kowalski</td>
+              <td>6</td>
+              <td>03/02/2250</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="#main" class="footer__link">Na górę</a>
+    Strona autorstwa Mateusza Krause - frontendowca LVL: prawie mistrz
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
