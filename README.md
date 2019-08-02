@@ -1,4 +1,12 @@
-# wtf-gulp-starter
+![Homepage screenshot](github/gh.png)
+
+# Mój homepage
+
+Zapraszam na moją stronę: [Homepage](https://mateuszkrause.github.io/homepage-gulp)
+
+## Jak uruchomić moją stronę lokalnie
+
+Aby uruchomić moją stronę lokalnie wykonaj poniższe polecenia:
 
 `npm install -g gulp-cli`
 
