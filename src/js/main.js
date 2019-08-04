@@ -137,4 +137,26 @@ for (let property in person){
   console.log (`${property}: ${person[property]}`);
 }
 
+localStorage.setItem('name', 'Mateusz');
 
+localStorage.setItem('person', person);
+
+console.log(JSON.stringify(person));
+const jsonPerson = JSON.stringify(person);
+
+localStorage.setItem('person', jsonPerson);
+
+const personStringify = localStorage.getItem('person');
+
+const newPerson = JSON.parse(personStringify);
+console.log(newPerson);
+
+localStorage.removeItem('person');
+
+const focusInput = document.querySelector('.focus--js');
+if (localStorage.getItem('focusInput')) {
+  focusInput.value = localStorage.getItem('focusInput');
+}
+focusInput.addEventListener('keyup', (e) => {
+  localStorage.setItem('focusInput', e.target.value);
+});
