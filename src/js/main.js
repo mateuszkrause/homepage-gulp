@@ -117,3 +117,24 @@ navigationSwitcher.addEventListener('click', (e) => {
   navigationSwitcher.innerHTML = '&#9776';
   }
 });
+
+const faces = ['😊','😂','🤣'];
+
+for (let i = 0; i <faces.length; i++) {
+  console.log ([i+1] + ': ' + faces[i]);
+  console.log (`${i+1} element tablicy: ${faces[i]}`);
+}
+
+for (let face of faces){
+  console.log(face);
+}
+
+const person = {
+  name: 'Mateusz',
+  age: 27
+}
+for (let property in person){
+  console.log (`${property}: ${person[property]}`);
+}
+
+
